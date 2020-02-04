@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( tflife_inference )
+find_package( OpenCV REQUIRED )
+add_executable( tflife_inference tflife.cpp )
+target_link_libraries( tflife_inference ${OpenCV_LIBS} )
